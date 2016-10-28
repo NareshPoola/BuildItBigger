@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.udacity.jokeandroidlibrary.JokesActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-6968586789196579~2432546648");
         mJokeButtonView = (Button) findViewById(R.id.joke_button_view);
-        mAdView = (AdView) findViewById(R.id.adView);
+        mAdView = (AdView) findViewById(R.id.ad_view);
 
         mJokeButtonView.setOnClickListener(new View.OnClickListener() {
             @Override
