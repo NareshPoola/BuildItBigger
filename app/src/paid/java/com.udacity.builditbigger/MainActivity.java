@@ -26,15 +26,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-6968586789196579~2432546648");
         mJokeButtonView = (Button) findViewById(R.id.joke_button_view);
-
         mJokeButtonView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getJoke();
             }
-        });}
+        });
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
