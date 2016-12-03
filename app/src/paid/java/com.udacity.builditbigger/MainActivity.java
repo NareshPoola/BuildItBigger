@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.gms.ads.MobileAds;
 import com.udacity.jokeandroidlibrary.JokesActivity;
 
 public class MainActivity extends AppCompatActivity {
